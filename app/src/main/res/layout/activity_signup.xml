@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
+    tools:context=".activity.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="333dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="204dp"
+        android:src="@android:drawable/alert_dark_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp / Registrarse"
+        android:textColor="#000000"
+        android:textDirection="locale"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="623dp"
+        android:background="@drawable/borderblanche"
+        android:backgroundTint="#E8E5E5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información del perfil"
+            android:textAlignment="center"
+            android:textColor="@color/lavender"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/EDTNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:hint="Nombre"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/EDTApellido"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:hint="Primer apellido"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/EDTCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_alternate_email_24"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/EDTContra"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:hint="Contraseña"
+            android:padding="8dp"
+            android:password="true"
+
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/EDTMaterna"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_flag_circle_24"
+            android:hint="Lengua materna"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/EDTrain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/baseline_language_24"
+            android:hint="Lengua en aprendizaje"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#926BCD"
+            android:textColor="@color/white"
+            android:text="Registrarse"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
